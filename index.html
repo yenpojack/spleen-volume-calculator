@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,9 @@
     input, select { padding: 6px; margin: 4px 0; width: 100%; }
     label { font-weight: bold; margin-top: 10px; display: block; }
     .result { margin-top: 20px; font-size: 1.2em; }
+    table { border-collapse: collapse; margin-top: 2em; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+    th { background-color: #f2f2f2; }
   </style>
 </head>
 <body>
@@ -57,16 +59,40 @@
     </select>
 
     <button type="submit">Calculate</button>
-
-
-<tr><td>20s</td><td>Female</td><td>18</td><td>216.3</td><td>68.0</td><td>114.3</td><td>363.2</td></tr>
-<tr><td>20s</td><td>Male</td><td>16</td><td>238.9</td><td>94.2</td><td>134.2</td><td>542.0</td></tr>
-
-    
   </form>
 
   <div class="result" id="results"></div>
 
+  <h3>Spleen Volume Reference by Age and Sex</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Age Group</th>
+        <th>Sex</th>
+        <th>n</th>
+        <th>Mean (mL)</th>
+        <th>SD</th>
+        <th>Q1</th>
+        <th>Max</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>20s</td><td>Female</td><td>18</td><td>216.3</td><td>68.0</td><td>114.3</td><td>363.2</td></tr>
+      <tr><td>20s</td><td>Male</td><td>16</td><td>238.9</td><td>94.2</td><td>134.2</td><td>542.0</td></tr>
+      <tr><td>30s</td><td>Female</td><td>39</td><td>172.0</td><td>57.2</td><td>71.5</td><td>335.1</td></tr>
+      <tr><td>30s</td><td>Male</td><td>36</td><td>189.6</td><td>95.6</td><td>54.2</td><td>561.5</td></tr>
+      <tr><td>40s</td><td>Female</td><td>51</td><td>169.7</td><td>55.7</td><td>58.5</td><td>280.9</td></tr>
+      <tr><td>40s</td><td>Male</td><td>40</td><td>239.3</td><td>122.0</td><td>92.4</td><td>731.2</td></tr>
+      <tr><td>50s</td><td>Female</td><td>60</td><td>151.6</td><td>55.4</td><td>112.1</td><td>294.4</td></tr>
+      <tr><td>50s</td><td>Male</td><td>58</td><td>179.3</td><td>69.9</td><td>128.2</td><td>344.5</td></tr>
+      <tr><td>60s</td><td>Female</td><td>47</td><td>145.6</td><td>59.6</td><td>104.7</td><td>423.5</td></tr>
+      <tr><td>60s</td><td>Male</td><td>56</td><td>187.1</td><td>115.2</td><td>130.2</td><td>826.7</td></tr>
+      <tr><td>70s</td><td>Female</td><td>37</td><td>149.6</td><td>71.3</td><td>98.3</td><td>397.4</td></tr>
+      <tr><td>70s</td><td>Male</td><td>42</td><td>174.4</td><td>84.4</td><td>105.2</td><td>341.1</td></tr>
+    </tbody>
+  </table>
+
   <script src="script.js"></script>
 </body>
 </html>
+
